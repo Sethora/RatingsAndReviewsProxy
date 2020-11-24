@@ -14,4 +14,8 @@ app.use('/bundles', router.bundles);
 // Handling AJAX requests to the API by passing off requests to the api router
 app.use('/api', router.api);
 
+app.get('/*', (req, res) => {
+  res.sendFile('/Users/sethlassen/Desktop/FEC/RatingsAndReviewsProxy/public/index.html')
+})
+
 module.exports = app;
