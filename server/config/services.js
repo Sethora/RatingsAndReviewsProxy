@@ -41,24 +41,24 @@
 */
 
 module.exports = {
-  service1: {
+  service1: { // seth
     api: '/products/:id/reviews/*',
-    url: 'http://localhost:3001',
+    url: 'http://3.16.79.102:3001/',
     bundle: 'bundle.js'
   },
-  service2: {
+  service2: { // leah
     api: '/products/:id/*',
-    url: 'http://localhost:4444',
-    bundle: 'main.js',
+    url: 'http://13.57.250.145:4444/',
+    bundle: 'main.js'
+  },
+  service3: { // giovani
+    api: '/*',
+    url: 'http://54.234.84.102:3100/',
+    bundle: 'bundle.js'
+  },
+  service4: { // quentin
+    api: ['/etp/images', '/etp/member/?memberId=*', '/etp/products/?products=*'],
+    url: 'http://3.15.186.151:2754',
+    bundle: 'bundle.js'
   }
-  // service3: {
-  //   api: 'FIX_ME',
-  //   url: 'http://localhost:3003',
-  //   bundle: 'app.js',
-  // },
-  // service4: {
-  //   api: 'FIX_ME',
-  //   url: 'http://localhost:3004',
-  //   bundle: 'app.js',
-  // },
 };
